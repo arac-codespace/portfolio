@@ -1,0 +1,38 @@
+-- Installed react using...
+
+create-react-app test --use-npm
+...
+Success! Created frontend at C:\pySites\arac-portfolio\src\frontend
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd frontend
+  npm start
+
+---
+Base reference...
+https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
+
+Include bootstrap...
+https://m.pardel.net/react-and-bootstrap-4-part-1-setup-navigation-d4767e2ed9f0
+
+Include react-router...
+https://reacttraining.com/react-router/web/guides/quick-start
+https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
+
+About the index.js file...
+https://stackoverflow.com/questions/41738421/how-react-js-index-js-file-contacting-index-html-for-id-references
