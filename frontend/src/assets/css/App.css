@@ -1,0 +1,34 @@
+/*.content {
+	background-image: url("/alec-weir-26819-unsplash.jpg");
+	background-size: cover;
+}*/
+
+html, body, #root, .react-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+html { font-size: 1em; }
+h1 { font-size: 2.074em; }
+h2 { font-size: 1.728em; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em; }
+small { font-size: 0.833em; }
+@media screen and (min-width: 1400px) {
+  html { font-size: 1.25em; }
+}
+
+html {
+    background-image: url("../imgs/alec-weir-26819-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;    
+}
+body {
+	background-color: transparent !important;
+}
