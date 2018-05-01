@@ -1,20 +1,37 @@
 import React from 'react';
+import jss from 'jss';
+import preset from 'jss-preset-default';
 
+import Geology from './Geology'
+import WebDev from './WebDev'
+import ProjectNav from './ProjectNav'
+
+import { BrowserRouter as Route, Router, NavLink } from 'react-router-dom'
+
+// One time setup with default plugins and settings.
+jss.setup(preset());
+
+const styles = {
+  projectsWrapper: {
+  	padding: "1rem"
+  },
+  viewHeader: {
+  	textAlign: "center"
+  },
+  toolset: {
+  	marginBottom: "0.5rem"
+  }
+
+};
+
+
+const { classes } = jss.createStyleSheet(styles).attach();
 class Projects extends React.Component {
 	render() {
+		console.log(this.props)
 		return (
-			<div>
-				<p>I'm Projects!</p>
-
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus turpis tellus, 
-					ut dictum dui consequat at. Nulla sapien dolor, ultrices ac molestie sed, rutrum eu 
-					elit. Pellentesque tincidunt, erat nec dictum porta, nisi erat cursus diam, id varius 
-					leo nibh id ipsum. Nulla malesuada, magna eget condimentum hendrerit, quam mauris 
-					vestibulum leo, vel porta ligula massa vitae dolor. Fusce purus magna, mattis id rhoncus 
-					sit amet, tempor nec tortor. Nullam eget volutpat orci, at vehicula lorem. Nunc euismod 
-					enim vitae urna pellentesque posuere.
-				</p>			
+			<div className={"row align-items-center " + classes.projectsWrapper}>
+				<ProjectNav/>
 			</div>
 		);
 	}

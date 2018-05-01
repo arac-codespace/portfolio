@@ -8,6 +8,7 @@ html, body, #root, .react-wrapper {
 	height: 100%;
 }
 
+/*Size*/
 html { font-size: 1em; }
 h1 { font-size: 2.074em; }
 h2 { font-size: 1.728em; }
@@ -16,6 +17,23 @@ h4 { font-size: 1.2em; }
 small { font-size: 0.833em; }
 @media screen and (min-width: 1400px) {
   html { font-size: 1.25em; }
+}
+
+/*Font Family*/
+h1 {
+    font-family: 'Oswald', sans-serif !important; font-weight: 700; text-transform: uppercase;
+    }
+h2 {
+    font-family: 'Oswald', serif !important;
+    }
+h3,h4 {
+	font-family: 'Oswald', serif !important;
+}
+p {
+    font-family: 'Work Sans', serif !important;
+    }
+small {
+	font-family: 'Work Sans', serif !important;
 }
 
 html {
