@@ -24,7 +24,7 @@ class Skills extends React.Component {
 	render() {
 		return (
 			<div className={classes.skillsWrapper}>
-				<h1 class="text-center">Skills</h1>
+				<h1 className="text-center">Skills</h1>
 				<h3>Web Development</h3>
 				<p className={classes.sectionDescription}>
 					Currently developing applications with Django, 

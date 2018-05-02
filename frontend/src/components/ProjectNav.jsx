@@ -8,7 +8,7 @@ import WebDevImg from '../assets/imgs/programming.svg'
 import GeologyImgColor from '../assets/imgs/geology-color.svg'
 import WebDevImgColor from '../assets/imgs/programming-color.svg'
 
-import { BrowserRouter as Route, Router, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 // One time setup with default plugins and settings.
 jss.setup(preset());
@@ -53,9 +53,9 @@ class ProjectNav extends React.Component {
     let devURL = "/Projects/Webdev"; 
     let geoURL = "/Projects/Geology";
 
-    if (currentLoc == devURL) {
+    if (currentLoc === devURL) {
       webDevImg = WebDevImgColor;
-    } else if (currentLoc == geoURL) {
+    } else if (currentLoc === geoURL) {
       geoImg = GeologyImgColor;
     }
 

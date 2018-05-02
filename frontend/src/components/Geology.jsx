@@ -3,7 +3,6 @@ import jss from 'jss';
 import preset from 'jss-preset-default';
 import ProjectNav from './ProjectNav'
 
-import stratMap from '../assets/imgs/stratcolPreviewCrop.png'
 // One time setup with default plugins and settings.
 jss.setup(preset());
 
@@ -13,17 +12,28 @@ const styles = {
   },
   viewHeader: {
   	textAlign: "center"
-  }
+  },
+  linkStyle: {
+  	color: "#9c1f1f",
+  	"&:hover": {
+  		color: "#d52a2a"
+  	}
+  },
+  projectSection: {
+  	marginTop: "1rem"
+  },    
 };
 
 
 const { classes } = jss.createStyleSheet(styles).attach();
 class Geology extends React.Component {
 	render() {
+			let pdfStruct = "https://drive.google.com/file/d/1HR0a5KOlMNkKAALFF7O46qFuTmfS5xKJ/view?usp=sharing"
+			let pdfStrat = "https://drive.google.com/file/d/18VZyr4VPIJcYXdU8A_GSdtiiCjKPQc7e/view?usp=sharing"
 		return (
 			<div className={"row align-items-center " + classes.projectsWrapper}>	
 				<ProjectNav/>	
-				<div className="col-12">
+				<div className={"col-12 " + classes.projectSection}>
 					<h3>Structure of the Ponce Limestone</h3>
 					<p>
 						&emsp; An analysis of the geological structure of the Ponce Limestone is presented derived from
@@ -38,8 +48,9 @@ class Geology extends React.Component {
 						The north-northwest extension could also be identified at Site 3 where northeast trending faults
 						crosscut strata of the Juana Diaz Formation.
 					</p>
+					<h4>Link: <a target="_blank" className={classes.linkStyle} href={pdfStruct}>PDF Format</a></h4>										
 				</div>
-				<div className="col-12">
+				<div className={"col-12 " + classes.projectSection}>
 					<h3>Stratrigraphic analysis of an exposed section mountain cut at Extensión Alta Vista, Ponce</h3>
 					<p>
 						&emsp; A sequence stratigraphy column is presented for a well exposed mountain cut located at
@@ -54,6 +65,7 @@ class Geology extends React.Component {
 						Lepidociclina, the abundance of Marginopora, and the lithologic characteristics of the area it is
 						concluded that the studied outcrop represents part of the Ponce Limestone.
 					</p>
+					<h4>Link: <a target="_blank" className={classes.linkStyle} href={pdfStrat}>PDF Format</a></h4>					
 				</div>													
 			</div>
 		);

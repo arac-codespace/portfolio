@@ -4,10 +4,15 @@ import preset from 'jss-preset-default';
 
 import ProjectNav from './ProjectNav'
 
-import stratMap from '../assets/imgs/stratcolPreviewCrop.png'
 // One time setup with default plugins and settings.
 jss.setup(preset());
 
+/*
+red:#d52a2a
+dark-blue: #232833
+dark-red: #9c1f1f
+black: #212529
+*/
 const styles = {
   projectsWrapper: {
   	padding: "1rem"
@@ -17,6 +22,15 @@ const styles = {
   },
   toolset: {
   	marginBottom: "0.5rem"
+  },
+  projectSection: {
+  	marginTop: "1rem"
+  },
+  linkStyle: {
+  	color: "#9c1f1f",
+  	"&:hover": {
+  		color: "#d52a2a"
+  	}
   }
 };
 
@@ -27,7 +41,7 @@ class WebDev extends React.Component {
 		return (
 			<div className={"row align-items-center " + classes.projectsWrapper}>		
 				<ProjectNav/>							
-				<div className="col-12">
+				<div className={"col-12 " + classes.projectSection}>
 					<h3>stratMap</h3>
 					<p>
 						Automatically generate and plot a stratigraphic column based on the information the user provides.
@@ -45,8 +59,9 @@ class WebDev extends React.Component {
 						<li>SVG Crowbar</li>						
 						<li>Adobe Illustrator</li>
 					</ul>
+					<h4>Link: <a className={classes.linkStyle} href="https://strat-map.herokuapp.com/">strat-map.herokuapp.com</a></h4>
 				</div>
-				<div className="col-12">
+				<div className={"col-12 " + classes.projectSection}>
 					<h3>Portfolio</h3>
 					<p>
 						A simple SPA portfolio for experimentation and exposure purposes.
@@ -59,9 +74,10 @@ class WebDev extends React.Component {
 						<li>Bootstrap v4</li>
 						<li>JSS</li>
 					</ul>
+					<h4>Link: <a className={classes.linkStyle} href="#">alexis-aguirre.herokuapp.com</a></h4>					
 				</div>
 
-				<div className="col-12">
+				<div className={"col-12 " + classes.projectSection}>
 					<h3>Marine Species Fossil Database</h3>
 					<p>
 						Porting a simple "fossil book" project over to the net.  More of an encyclopedia entry than a database really.  
@@ -70,9 +86,18 @@ class WebDev extends React.Component {
 					<ul>
 						<li>Ruby & Ruby on Rails</li>
 						<li>jQuery</li>
+						<li>Bootstrap v3</li>
 						<li>Amazon S3</li>
 					</ul>
-				</div>												
+					<h4>Link: <a className={classes.linkStyle} href="https://marine-species-fossil-database.herokuapp.com">marine-species-fossil-database.herokuapp.com</a></h4>										
+				</div>	
+				<div className={"col-12 " + classes.projectSection}>
+					<h3>Github Repository</h3>
+					<p>
+						Visit my Github repository to view the source code of these and other projects/experiments.  
+					</p>
+					<h4>Link: <a className={classes.linkStyle} href="https://github.com/arac-codespace">github.com/arac-codespace</a></h4>										
+				</div>															
 			</div>
 		);
 	}
