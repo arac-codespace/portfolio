@@ -12,7 +12,6 @@ jss.setup(preset());
 const styles = {
   brand: {
     color: "white",
-    // fontWeight: "bold",
     fontFamily: "Oswald, sans-serif",
     fontSize: "1.2em",
     "&:hover": {
@@ -29,7 +28,6 @@ const styles = {
   },
   navContainer: {
     backgroundColor: '#232833',
-    // padding: "0px !important"
   },
   navLinksContainer: {
     backgroundColor: '#d52a2a',
@@ -40,7 +38,6 @@ const styles = {
     padding: ".5rem 1rem",
     fontFamily: "Work Sans, sans-serif",
     color: "white",
-    // fontWeight: "bold",
     "&:hover": {
       textDecoration: "none",
       fontWeight: "bold",
@@ -56,13 +53,7 @@ const styles = {
     fontWeight: "bold",
     '&:after': {
       content: '"\\25BC"',
-      // position: "absolute",
-      // width: "0",
       height: "0",
-      // borderTop: "9px solid transparent",
-      // borderBottom: "9px solid transparent",
-      // borderRight: "8px solid #fff",
-      // bottom: "6px",
       left: "auto",
       right: "50%",
       color: "#9c1f1f",
@@ -80,9 +71,7 @@ const { classes } = jss.createStyleSheet(styles).attach();
 
 class NavBar extends React.Component {
 	render() {
-    // console.log(this.props);
     let isMobile = this.props.isMobile
-
 
 		return (
       <div className={"col-12 " + classes.navContainer}>
@@ -94,8 +83,8 @@ class NavBar extends React.Component {
           </div>
           <div className="col media-links">
             <div className="row justify-content-center">
-              <a href="https://github.com/arac-codespace" target="_blank"><img alt="Github" src={Github} className={classes.mediaIcons}></img></a>   
-              <a href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.mediaIcons}></img></a>               
+              <a title="Github" href="https://github.com/arac-codespace" target="_blank"><img alt="Github" src={Github} className={classes.mediaIcons}></img></a>   
+              <a title="Linkedin" href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.mediaIcons}></img></a>               
             </div>
           </div>
         </div>

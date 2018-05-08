@@ -25,6 +25,10 @@ const styles = {
   	height:"1.5rem",
   	marginRight: "0.5rem"
   },
+  imgLinkedin: {
+    extend: "img",
+    marginBottom: "6px"
+  },
   labelStyle: {
   	display: "inline-block",
   	marginRight: "2rem"
@@ -56,7 +60,7 @@ class Contact extends React.Component {
 	          <a className={classes.anchorStyle} href="https://github.com/arac-codespace" target="_blank"><img alt="Github" src={Github} className={classes.img}></img><span>arac-codespace</span></a>   					
 					</div>
 					<div>						
-	          <a className={classes.anchorStyle} href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.img}></img><span>alexis-ramon-aguirre-cintron</span></a>   					
+	          <a className={classes.anchorStyle} href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.imgLinkedin}></img><span>alexis-ramon-aguirre-cintron</span></a>   					
 					</div>					
 				</div>
 			</div>
