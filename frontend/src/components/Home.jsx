@@ -20,7 +20,8 @@ const styles = {
 		textShadow: "1px 1px 3px #232833",
     color: "white",
     // padding: "1em",
-    fontWeight: "bold"	
+    fontWeight: "bold",
+    marginTop:"3rem"
   }
 };
 

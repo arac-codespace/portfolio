@@ -10,7 +10,8 @@ import About from './components/About'
 import Skills from './components/Skills'
 import WebDev from './components/WebDev'
 import Geology from './components/Geology'
-
+import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 import './assets/css/App.css'
 
@@ -28,7 +29,8 @@ const styles = {
   componentWrapper: {
     backgroundColor: '#ffffff80',
     // padding: "1rem 2rem",
-    borderRadius: "5px" 
+    borderRadius: "5px 5px 0 0",
+    height: "100%" 
   },
   componentWrapperNoBg: {
     extend: "componentWrapper",
@@ -60,9 +62,6 @@ class App extends Component {
       })
     });
   }
-  // componentWillUnmount() {
-  //     this.unlisten();
-  // }  
 
   // Triggered by resize event.  
   updateDimensions() {
@@ -72,44 +71,37 @@ class App extends Component {
         isMobile: (innerWidth<=768)?true:false
       });
   }
-  // clickedLink() {
-  //   let currentURL = window.location.pathname;
-  //   console.log(currentURL);
-  //   this.setState({
-  //     currentURL: currentURL,
-  //   });
-  // }
+
   render() {
-    // console.log(this.state.currentURL);
     const currentURL = this.state.currentURL;
     const isMobile = this.state.isMobile;
     let wrapperClass = "";
+    let footer = null;
 
     if (currentURL === "/") {
       wrapperClass = classes.componentWrapperNoBg
     } else {
       wrapperClass = classes.componentWrapper
+      footer = <Footer/>
     }
-    // console.log(this.state.innerWidth)
-    // console.log(this.state.isMobile)
+
     return (
-      // <Router>
-        <div className="react-wrapper container-fluid">
-          <div className="row justify-content-center">
-            <NavBar currentURL={currentURL} isMobile={isMobile}/>
-            <div className={"col-12 col-lg-10 " + classes.content}>
-              <div className = {wrapperClass}>
-                  <Route exact path="/" component={Home}/>
-                  <Route exact path="/About" component={About}/>                  
-                  <Route exact path="/Projects" component={Projects}/>
-                  <Route exact path="/Projects/WebDev" component={WebDev}/>
-                  <Route exact path="/Projects/Geology" component={Geology}/>                                    
-                  <Route exact path="/Skills" component={Skills}/>
-              </div>
+      <div className="react-wrapper container-fluid">
+        <div className="row justify-content-center">
+          <NavBar currentURL={currentURL} isMobile={isMobile}/>
+          <div className={"col-12 col-lg-10 " + classes.content}>
+            <div className = {wrapperClass}>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/Projects" component={Projects}/>
+              <Route exact path="/Projects/WebDev" component={WebDev}/>
+              <Route exact path="/Projects/Geology" component={Geology}/>                                    
+              <Route exact path="/Skills" component={Skills}/>
+              <Route exact path="/Contact" component={Contact}/>
             </div>
           </div>
+          {footer}
         </div>
-      // </Router>
+      </div>
     );
   }
 }

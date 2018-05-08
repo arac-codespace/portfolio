@@ -20,17 +20,11 @@ const styles = {
   viewHeader: {
   	textAlign: "center"
   },
-  toolset: {
-  	marginBottom: "0.5rem"
-  },
   img: {
     height: "4rem"
   },
   projLink: {
-    display: "block",
-    // color: "#212529",
-    // fontFamily: "'Work Sans', serif !important",
-    // fontWeight: "bold"
+    display: "inline-block"
   },
   anchorStyle: {
     color: "#212529",
@@ -45,19 +39,81 @@ const styles = {
 
 const { classes } = jss.createStyleSheet(styles).attach();
 class ProjectNav extends React.Component {
-	render() {
+  constructor(){
+    super();
+    this.state = {
+      webDevImg: null,
+      geoImg: null,
+      currentPath: window.location.pathname,
+      projURL: "/Projects",
+      devURL: "/Projects/Webdev",
+      geoURL: "/Projects/Geology"
+    }
+    this.handleWebHoverIn = this.handleWebHoverIn.bind(this);
+    this.handleGeoHoverIn = this.handleGeoHoverIn.bind(this); 
+    this.handleWebHoverOut = this.handleWebHoverOut.bind(this);
+    this.handleGeoHoverOut = this.handleGeoHoverOut.bind(this);        
+  }
+
+  handleWebHoverIn(){
+    if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.geoURL)
+    {
+      console.log("handle hover in")
+      this.setState({
+        webDevImg: WebDevImgColor
+      })
+    }
+  }
+
+  handleGeoHoverIn(){
+    if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.devURL)
+    {
+      console.log("handle hover in")
+      this.setState({
+        geoImg: GeologyImgColor
+      })
+    }
+  } 
+  handleWebHoverOut(){
+    if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.geoURL)
+    {
+      console.log("handle hover out")
+      this.setState({
+        webDevImg: WebDevImg
+      })
+    }
+  }
+
+  handleGeoHoverOut(){
+    if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.devURL)
+    {
+      console.log("handle hover out")
+      this.setState({
+        geoImg: GeologyImg
+      })
+    }
+  }   
+
+  componentWillMount() {
     let geoImg = GeologyImg;
     let webDevImg = WebDevImg;
-    let currentLoc = window.location.pathname;
-
+    let currentPath = this.state.currentPath;
     let devURL = "/Projects/Webdev"; 
     let geoURL = "/Projects/Geology";
 
-    if (currentLoc === devURL) {
+
+    if (currentPath === devURL) {
       webDevImg = WebDevImgColor;
-    } else if (currentLoc === geoURL) {
+    } else if (currentPath === geoURL) {
       geoImg = GeologyImgColor;
-    }
+    }    
+
+    this.setState({
+      webDevImg: webDevImg,
+      geoImg: geoImg
+    })
+  }
+  render() {
 
 		return (
         <div className={"col-12 " + classes.projectNavWrapper}>
@@ -66,15 +122,17 @@ class ProjectNav extends React.Component {
     					<h1 className={classes.viewHeader}>Projects</h1>
     				</div>
             <div className={"col-6 text-center"}>
-              <NavLink activeClassName={classes.selected} to={devURL} className={classes.anchorStyle}>
-      					<img className={classes.img} alt="Web Development" src={webDevImg}></img>
+              <NavLink activeClassName={classes.selected} to={this.state.devURL} className={classes.anchorStyle} onMouseEnter={this.handleWebHoverIn} onMouseLeave={this.handleWebHoverOut}>
+      					<img className={classes.img} alt="Web Development" src={this.state.webDevImg}></img>
+                <br/>
                 <span className={classes.projLink}>Web Development</span>
               </NavLink>		              
             </div>
             <div className={"col-6 text-center"}> 
               <div>             
-                <NavLink activeClassName={classes.selected} to={geoURL} className={classes.anchorStyle}>
-        					<img className={classes.img} alt="Geology" src={geoImg}></img>
+                <NavLink activeClassName={classes.selected} to={this.state.geoURL} className={classes.anchorStyle} onMouseEnter={this.handleGeoHoverIn} onMouseLeave={this.handleGeoHoverOut}>
+        					<img className={classes.img} alt="Geology" src={this.state.geoImg}></img>
+                  <br/>
                   <span className={classes.projLink}>Geology</span>
                 </NavLink>
               </div>												

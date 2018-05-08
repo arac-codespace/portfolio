@@ -17,14 +17,13 @@ const styles = {
   projectsWrapper: {
   	padding: "1rem"
   },
-  viewHeader: {
-  	textAlign: "center"
-  },
   toolset: {
   	marginBottom: "0.5rem"
   },
   projectSection: {
-  	marginTop: "1rem"
+  	marginTop: "1rem",
+    borderTop: "1px solid #232833",
+    padding: "2rem 0"  	
   },
   linkStyle: {
   	color: "#9c1f1f",

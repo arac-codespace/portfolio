@@ -21,8 +21,8 @@ const styles = {
     }
   },
   mediaIcons: {
-    height: "1.2rem",
-    paddingRight: "0.5rem"
+    height: "1.3rem",
+    paddingRight: "0.65rem"
   },
   brandContainer: {
     padding: "0.5rem 1rem"
@@ -94,24 +94,24 @@ class NavBar extends React.Component {
           </div>
           <div className="col media-links">
             <div className="row justify-content-center">
-              <img alt="Github" src={Github} className={classes.mediaIcons}></img>   
-              <img alt="Linkedin" src={Linkedin} className={classes.mediaIcons}></img>                 
+              <a href="https://github.com/arac-codespace" target="_blank"><img alt="Github" src={Github} className={classes.mediaIcons}></img></a>   
+              <a href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.mediaIcons}></img></a>               
             </div>
           </div>
         </div>
 
         <div className={"row justify-content-center " + classes.navLinksContainer}>
-          <NavLink activeClassName={classes.selected} to="/About" className={"col " + classes.navLink}>
-            <i className={"fas fa-address-card " + classes.navIcons}></i> <span className={(isMobile?classes.isMobile:"")}>About</span>
+          <NavLink activeClassName={classes.selected} exact to="/" className={"col " + classes.navLink}>
+            <i className={"fas fa-home " + classes.navIcons}></i> <span className={(isMobile?classes.isMobile:"")}>Home</span>
           </NavLink>
-          <NavLink activeClassName={classes.selected} to="/Skills" className={"col " + classes.navLink}>
+          <NavLink activeClassName={classes.selected} exact to="/Skills" className={"col " + classes.navLink}>
             <i className={"fas fa-cogs " + classes.navIcons}></i> <span className={(isMobile?classes.isMobile:"")}>Skills</span>
           </NavLink>
           <NavLink activeClassName={classes.selected} to="/Projects" className={"col " + classes.navLink}>
             <i className={"fas fa-clipboard-list " + classes.navIcons}></i> <span className={(isMobile?classes.isMobile:"")}>Projects</span>
           </NavLink>
-          <NavLink activeClassName={classes.selected} to="/Contact" className={"col  " + classes.navLink}>
-            <i className={"fas fa-at " + classes.navIcons}></i> <span className={(this.props.isMobile?classes.isMobile:"")}>Contact</span>
+          <NavLink activeClassName={classes.selected} exact to="/Contact" className={"col  " + classes.navLink}>
+            <i className={"fas fa-at " + classes.navIcons}></i> <span className={(isMobile?classes.isMobile:"")}>Contact</span>
           </NavLink>                              
         </div>
       </div>

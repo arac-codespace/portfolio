@@ -10,16 +10,8 @@ jss.setup(preset());
 const styles = {
   projectsWrapper: {
   	padding: "1rem"
-  },
-  viewHeader: {
-  	textAlign: "center"
-  },
-  toolset: {
-  	marginBottom: "0.5rem"
   }
-
 };
-
 
 const { classes } = jss.createStyleSheet(styles).attach();
 class Projects extends React.Component {

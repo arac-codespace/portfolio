@@ -20,7 +20,9 @@ const styles = {
   	}
   },
   projectSection: {
-  	marginTop: "1rem"
+  	marginTop: "1rem",
+    borderTop: "1px solid #232833",
+    padding: "2rem 0"  	
   },    
 };
 
