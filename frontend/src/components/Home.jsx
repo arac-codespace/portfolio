@@ -34,7 +34,7 @@ class Home extends React.Component {
 			<div className={classes.homeWrapper}>
 
 				<h1 className={classes.centerText}>Alexis Aguirre Cintrón</h1>
-				<h2 className={classes.centerText}>Web Developer &amp; Geologist</h2>
+				<h2 className={classes.centerText}>Geologist &amp; Web Developer</h2>
 				<p className={classes.paragraphText}>
 					Obssessed with stratigraphy and the visualization of data.  
 					I aim to create visualizations for geologic and environmental 

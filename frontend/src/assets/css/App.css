@@ -37,16 +37,35 @@ small {
 }
 
 html {
-    background-image: url("../imgs/alec-weir-26819-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    overflow: scroll;
+  background-image: url("../imgs/alec-weir-26819-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;    
+	-o-background-size: cover; 
 }
 body {
 	background-color: transparent !important;
+}
+
+.content-enter {
+  opacity: 0.01;
+  transform: translateX(100%);  
+}
+.content-enter-active {
+  transform: translateX(0%);    
+  opacity: 1;
+  transition: all 300ms ease-out;
+}
+.content-exit {
+  transform: translateX(0%);    
+  opacity: 1;
+}
+.content-exit-active {
+  transform: translateX(-100%);    
+  opacity: 0.01;
+  transition: all 300ms ease-out;
 }

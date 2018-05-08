@@ -43,9 +43,9 @@ class Footer extends React.Component {
 	};
 	render() {
 		return (
-      <div className={"col-12 col-lg-10 " + classes.componentWrapper}>
+      <div className={"col-12 " + classes.componentWrapper}>
 
-        <div className={classes.footer}>
+        <div className={"row " + classes.footer}>
           <div className={"col-12"}>
             <div className={"row align-items-center justify-content-between"}>
 

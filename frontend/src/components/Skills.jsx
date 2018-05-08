@@ -30,6 +30,20 @@ class Skills extends React.Component {
 			<div className={classes.skillsWrapper}>
 				<h1 className="text-center">Skills</h1>
 				<div className={classes.projectSection}>
+					<h3>Geology</h3>
+					<p className={classes.sectionDescription}> &emsp; General knowledge about the structure and evolution of the earth and its natural resources. 
+							I'm particularly interested in the analysis and interpretation of depositional environments 
+							and sequence stratigraphy.
+					</p>
+					<ul>
+						<li>Collection, analysis and interpretation of geological data (textual, numerical, graphical...).</li>
+						<li>Basic knowledge on well logging.</li>
+						<li>Polarized light microscopy.</li>
+						<li>Field methods and techniques.</li>
+						<li>Geologist-in-Training Certification</li>
+					</ul>
+				</div>
+				<div className={classes.projectSection}>
 					<h3>Web Development</h3>
 					<p className={classes.sectionDescription}>
 						&emsp; Currently developing applications with Django, 
@@ -59,21 +73,7 @@ class Skills extends React.Component {
 							</ul>
 						</li>																			
 					</ul>
-				</div>
-				<div className={classes.projectSection}>
-					<h3>Geology</h3>
-					<p className={classes.sectionDescription}> &emsp; General knowledge about the structure and evolution of the earth and its natural resources. 
-							I'm particularly interested in the analysis and interpretation of depositional environments 
-							and sequence stratigraphy.
-					</p>
-					<ul>
-						<li>Collection, analysis and interpretation of geological data (textual, numerical, graphical...).</li>
-						<li>Basic knowledge on well logging.</li>
-						<li>Polarized light microscopy.</li>
-						<li>Field methods and techniques.</li>
-						<li>Geologist-in-Training Certification</li>
-					</ul>
-				</div>
+				</div>				
 				<div className={classes.projectSection}>
 					<h3>Other</h3>
 					<ul>
@@ -92,7 +92,7 @@ class Skills extends React.Component {
 							<li>Microsoft Office (Word, Excel, Power Point)</li>
 							<li>Open Office (Writer, Calc)</li>
 							<li>Stereonet 8 - <small><strong>Beginner</strong></small></li>
-							<li>Vegetable Gardening - <small><strong>!!!</strong></small></li>
+							<li>Vegetable Gardening</li>
 						</ul>
 					</ul>
 				</div>

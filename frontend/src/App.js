@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import {withRouter} from 'react-router';
 
 import NavBar from './components/NavBar'
 
 import Home from './components/Home'
 import Projects from './components/Projects'
-import About from './components/About'
 import Skills from './components/Skills'
 import WebDev from './components/WebDev'
 import Geology from './components/Geology'
@@ -17,6 +16,8 @@ import './assets/css/App.css'
 
 import jss from 'jss';
 import preset from 'jss-preset-default';
+
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 // One time setup with default plugins and settings.
 jss.setup(preset());
@@ -47,14 +48,13 @@ class App extends Component {
     this.state = {
       currentURL: window.location.pathname,
       innerWidth: window.innerWidth,
-      isMobile: (window.innerWidth<=768)?true:false
-
+      isMobile: (window.innerWidth<=768)?true:false,
     }
     this.updateDimensions = this.updateDimensions.bind(this);
   }
   // https://stackoverflow.com/questions/45373742/detect-route-change-with-react-router
   componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);        
+    window.addEventListener("resize", this.updateDimensions);
     this.unlisten = this.props.history.listen((location, action) => {
       let currentURL = location.pathname;
       this.setState({
@@ -84,22 +84,32 @@ class App extends Component {
       wrapperClass = classes.componentWrapper
       footer = <Footer/>
     }
+    console.log(this.props.location)
+    // console.log(currentURL)
 
     return (
       <div className="react-wrapper container-fluid">
         <div className="row justify-content-center">
-          <NavBar currentURL={currentURL} isMobile={isMobile}/>
+          <NavBar currentURL={currentURL} isMobile={isMobile}/>          
           <div className={"col-12 col-lg-10 " + classes.content}>
-            <div className = {wrapperClass}>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/Projects" component={Projects}/>
-              <Route exact path="/Projects/WebDev" component={WebDev}/>
-              <Route exact path="/Projects/Geology" component={Geology}/>                                    
-              <Route exact path="/Skills" component={Skills}/>
-              <Route exact path="/Contact" component={Contact}/>
-            </div>
+            <TransitionGroup>     
+              <CSSTransition timeout={500} classNames="content" key={this.props.location.pathname}>  
+                <div>                  
+                  <div className = {wrapperClass}>
+                    <Switch location={this.props.location}>
+                      <Route exact path="/" component={Home}/>
+                      <Route exact path="/Projects" component={Projects}/>
+                      <Route exact path="/Projects/WebDev" component={WebDev}/>
+                      <Route exact path="/Projects/Geology" component={Geology}/>                                    
+                      <Route exact path="/Skills" component={Skills}/>
+                      <Route exact path="/Contact" component={Contact}/>
+                    </Switch>
+                  </div>
+                  {footer}
+                </div>
+              </CSSTransition>        
+            </TransitionGroup>
           </div>
-          {footer}
         </div>
       </div>
     );
