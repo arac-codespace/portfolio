@@ -11,6 +11,7 @@ import WebDev from './components/WebDev'
 import Geology from './components/Geology'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import NoMatch from './components/NoMatch'
 
 import './assets/css/App.css'
 
@@ -84,8 +85,6 @@ class App extends Component {
       wrapperClass = classes.componentWrapper
       footer = <Footer/>
     }
-    console.log(this.props.location)
-    // console.log(currentURL)
 
     return (
       <div className="react-wrapper container-fluid">
@@ -103,6 +102,7 @@ class App extends Component {
                       <Route exact path="/Projects/Geology" component={Geology}/>                                    
                       <Route exact path="/Skills" component={Skills}/>
                       <Route exact path="/Contact" component={Contact}/>
+                      <Route path="*" component={NoMatch}/>
                     </Switch>
                   </div>
                   {footer}

@@ -57,8 +57,7 @@ class ProjectNav extends React.Component {
 
   handleWebHoverIn(){
     if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.geoURL)
-    {
-      console.log("handle hover in")
+    {      
       this.setState({
         webDevImg: WebDevImgColor
       })
@@ -67,8 +66,7 @@ class ProjectNav extends React.Component {
 
   handleGeoHoverIn(){
     if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.devURL)
-    {
-      console.log("handle hover in")
+    {      
       this.setState({
         geoImg: GeologyImgColor
       })
@@ -76,8 +74,7 @@ class ProjectNav extends React.Component {
   } 
   handleWebHoverOut(){
     if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.geoURL)
-    {
-      console.log("handle hover out")
+    {      
       this.setState({
         webDevImg: WebDevImg
       })
@@ -86,8 +83,7 @@ class ProjectNav extends React.Component {
 
   handleGeoHoverOut(){
     if (this.state.currentPath === this.state.projURL || this.state.currentPath === this.state.devURL)
-    {
-      console.log("handle hover out")
+    {      
       this.setState({
         geoImg: GeologyImg
       })

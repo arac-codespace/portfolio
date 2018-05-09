@@ -30,6 +30,9 @@ const styles = {
   	"&:hover": {
   		color: "#d52a2a"
   	}
+  },
+  paragraph: {
+  	textAlign: "justify"
   }
 };
 
@@ -42,8 +45,8 @@ class WebDev extends React.Component {
 				<ProjectNav/>							
 				<div className={"col-12 " + classes.projectSection}>
 					<h3>stratMap</h3>
-					<p>
-						Automatically generate and plot a stratigraphic column based on the information the user provides.
+					<p className={classes.paragraph}>
+						&emsp; Automatically generate and plot a stratigraphic column based on the information the user provides.
 					</p>
 					<ul>
 						<li>Generate stratigraphic columns and download them in SVG format.</li>
@@ -62,8 +65,8 @@ class WebDev extends React.Component {
 				</div>
 				<div className={"col-12 " + classes.projectSection}>
 					<h3>Portfolio</h3>
-					<p>
-						A simple SPA portfolio for experimentation and exposure purposes.
+					<p className={classes.paragraph}>
+						&emsp; A simple SPA portfolio for experimentation and exposure purposes.
 					</p>
 					<strong><p className={classes.toolset}>Toolset</p></strong>
 					<ul>
@@ -78,8 +81,8 @@ class WebDev extends React.Component {
 
 				<div className={"col-12 " + classes.projectSection}>
 					<h3>Marine Species Fossil Database</h3>
-					<p>
-						Porting a simple "fossil book" project over to the net.  More of an encyclopedia entry than a database really.  
+					<p className={classes.paragraph}>
+						&emsp; Porting a simple "fossil book" project over to the net.  More of an encyclopedia entry than a database really.  
 					</p>
 					<strong><p className={classes.toolset}>Toolset</p></strong>
 					<ul>
@@ -92,8 +95,8 @@ class WebDev extends React.Component {
 				</div>	
 				<div className={"col-12 " + classes.projectSection}>
 					<h3>Github Repository</h3>
-					<p>
-						Visit my Github repository to view the source code of these and other projects/experiments.  
+					<p className={classes.paragraph}>
+						&emsp; Visit my Github repository to view the source code of these and other projects/experiments.  
 					</p>
 					<h4>Link: <a className={classes.linkStyle} href="https://github.com/arac-codespace">github.com/arac-codespace</a></h4>										
 				</div>															

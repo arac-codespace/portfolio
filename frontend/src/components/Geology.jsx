@@ -23,7 +23,10 @@ const styles = {
   	marginTop: "1rem",
     borderTop: "1px solid #232833",
     padding: "2rem 0"  	
-  },    
+  },  
+  paragraph: {
+  	textAlign: "justify"
+  }  
 };
 
 
@@ -37,11 +40,11 @@ class Geology extends React.Component {
 				<ProjectNav/>	
 				<div className={"col-12 " + classes.projectSection}>
 					<h3>Structure of the Ponce Limestone</h3>
-					<p>
+					<p className={classes.paragraph}>
 						&emsp; An analysis of the geological structure of the Ponce Limestone is presented derived from
 						data collected on the field.
 					</p>
-					<p>
+					<p className={classes.paragraph}>
 						&emsp; The data was collected from three distinct sites located on the
 						municipality of Ponce. Two phases of extension were identified; (1) a north-northwest extension
 						evidenced by the north-northeast trend of normal faults and the right lateral motion of an
@@ -54,11 +57,11 @@ class Geology extends React.Component {
 				</div>
 				<div className={"col-12 " + classes.projectSection}>
 					<h3>Stratrigraphic analysis of an exposed section mountain cut at Extensión Alta Vista, Ponce</h3>
-					<p>
+					<p className={classes.paragraph}>
 						&emsp; A sequence stratigraphy column is presented for a well exposed mountain cut located at
 						the urbanization “Ponce Hillscrest Village” in Ponce. 
 					</p>
-					<p>
+					<p className={classes.paragraph}>
 						&emsp; Data obtained from the field and from previous studies is utilized to identify, analyze and interpret 
 						the stratigraphy of the area. Six parasequences representing a marine transgression accompanied by a landward
 						shift of deep marine facies were identified. Based on the depositional environments represented

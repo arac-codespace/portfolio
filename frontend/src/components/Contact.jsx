@@ -1,10 +1,6 @@
 import React from 'react';
 import jss from 'jss';
 import preset from 'jss-preset-default';
-
-import Github from '../assets/imgs/github-logo-red.svg'
-import Mail from '../assets/imgs/mail-red.svg'
-import Linkedin from '../assets/imgs/linkedin-logo-red.svg'
 // One time setup with default plugins and settings.
 jss.setup(preset());
 
@@ -21,13 +17,9 @@ const styles = {
     padding: "2rem 0",
     textAlign: "center" 	
   }, 
-  img: {
-  	height:"1.5rem",
+  icons: {
+  	fontSize:"1.5rem",
   	marginRight: "0.5rem"
-  },
-  imgLinkedin: {
-    extend: "img",
-    marginBottom: "6px"
   },
   labelStyle: {
   	display: "inline-block",
@@ -36,8 +28,11 @@ const styles = {
   anchorStyle: {
   	color: "#d52a2a",
   	"&:hover": {
-  		color: "#d52a2a"
+  		color: "#9c1f1f"
   	}
+  },
+  infoContainer: {
+    paddingBottom: "0.5rem"
   }
 };
 
@@ -53,14 +48,14 @@ class Contact extends React.Component {
 				<h1 className="text-center">Contact</h1>
 				<div className={classes.section}>
 					<p className="text-center">I am available for hire and open to any ideas or suggestions.</p>
-					<div>						
-	          <a className={classes.anchorStyle} href="mailto:alex.aguirre0026@gmail.com"><img alt="Mail" src={Mail} className={classes.img}></img><span>alex.aguirre0026@gmail.com</span></a>   					
+					<div className={classes.infoContainer}>						
+	          <a className={classes.anchorStyle} href="mailto:alex.aguirre0026@gmail.com"><i className={"fas fa-envelope " + classes.icons}></i><span>alex.aguirre0026@gmail.com</span></a>   					
 					</div>
-					<div>
-	          <a className={classes.anchorStyle} href="https://github.com/arac-codespace" target="_blank"><img alt="Github" src={Github} className={classes.img}></img><span>arac-codespace</span></a>   					
+					<div className={classes.infoContainer}>
+	          <a className={classes.anchorStyle} href="https://github.com/arac-codespace" rel="noopener noreferrer" target="_blank"><i className={"fab fa-github " + classes.icons}></i><span>arac-codespace</span></a>   					
 					</div>
-					<div>						
-	          <a className={classes.anchorStyle} href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.imgLinkedin}></img><span>alexis-ramon-aguirre-cintron</span></a>   					
+					<div className={classes.infoContainer}>						
+	          <a className={classes.anchorStyle} href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" rel="noopener noreferrer" target="_blank"><i className={"fab fa-linkedin-in " + classes.icons}></i><span>alexis-ramon-aguirre-cintron</span></a>   					
 					</div>					
 				</div>
 			</div>

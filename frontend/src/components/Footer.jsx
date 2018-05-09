@@ -3,7 +3,6 @@ import jss from 'jss';
 import preset from 'jss-preset-default';
 
 import ScrollButton from './ScrollButton';
-import { NavLink } from 'react-router-dom'
 
 // One time setup with default plugins and settings.
 jss.setup(preset());

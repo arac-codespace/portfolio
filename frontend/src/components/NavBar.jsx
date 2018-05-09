@@ -4,8 +4,6 @@ import { NavLink } from 'react-router-dom'
 import jss from 'jss';
 import preset from 'jss-preset-default';
 
-import Github from '../assets/imgs/github-logo.svg'
-import Linkedin from '../assets/imgs/linkedin-logo.svg'
 // One time setup with default plugins and settings.
 jss.setup(preset());
 
@@ -19,9 +17,13 @@ const styles = {
       color: "#d52a2a",
     }
   },
-  mediaIcons: {
-    height: "1.3rem",
-    paddingRight: "0.65rem"
+  icons: {
+    color: "white",
+    fontSize: "1.3rem",
+    marginRight: "0.65rem",
+    "&:hover": {
+      color: "#d52a2a",
+    }
   },
   brandContainer: {
     padding: "0.5rem 1rem"
@@ -83,8 +85,8 @@ class NavBar extends React.Component {
           </div>
           <div className="col media-links">
             <div className="row justify-content-center">
-              <a title="Github" href="https://github.com/arac-codespace" target="_blank"><img alt="Github" src={Github} className={classes.mediaIcons}></img></a>   
-              <a title="Linkedin" href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" target="_blank"><img alt="Linkedin" src={Linkedin} className={classes.mediaIcons}></img></a>               
+              <a title="Github" href="https://github.com/arac-codespace" rel="noopener noreferrer" target="_blank"><i className={"fab fa-github " + classes.icons}></i></a>   
+              <a title="Linkedin" href="https://www.linkedin.com/in/alexis-ramon-aguirre-cintron/" rel="noopener noreferrer" target="_blank"><i className={"fab fa-linkedin-in " + classes.icons}></i></a>               
             </div>
           </div>
         </div>

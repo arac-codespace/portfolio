@@ -10,7 +10,7 @@ const styles = {
     textAlign: "center"
   },
   paragraphText: {
-  	extend:"centerText",
+  	textAlign: "justify",
   	marginTop: "2rem"
   },
   offsetText: {
