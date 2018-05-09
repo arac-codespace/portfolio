@@ -121,4 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+# Note that I've disabled collectstatic in heroku through
+# heroku config:set DISABLE_COLLECTSTATIC=1
+
 STATIC_URL = '/static/'
