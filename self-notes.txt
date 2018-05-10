@@ -36,3 +36,10 @@ https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
 
 About the index.js file...
 https://stackoverflow.com/questions/41738421/how-react-js-index-js-file-contacting-index-html-for-id-references
+
+
+https://medium.com/@nicholaskajoh/heres-a-dead-simple-react-django-setup-for-your-next-project-c0b0036663c6
+https://medium.com/@nicholaskajoh/deploy-your-react-django-app-on-heroku-335af9dab8a3
+https://github.com/nicholaskajoh/React-Django
+https://thinkster.io/tutorials/configuring-django-settings-for-production
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment
