@@ -25,7 +25,8 @@ const styles = {
   	padding: "0.5rem 1rem"
   },
   componentWrapper: {
-  	marginBottom: "1rem",
+    margin: "0 auto 5px",    
+  	// marginBottom: "1rem",
     // padding: "0rem 2rem !important"     
   },
 };
