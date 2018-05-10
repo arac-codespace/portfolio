@@ -13,4 +13,5 @@ ALLOWED_HOSTS = ['hidden-tundra-44495.herokuapp.com', '127.0.0.1:8000']
 # Heroku: Update database configuration from $DATABASE_URL.
 # db_from_env = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(db_from_env)
+DATABASES = {}
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
