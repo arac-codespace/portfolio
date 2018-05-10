@@ -25,6 +25,7 @@ SECRET_KEY = os.environ.get('PORTFOLIO_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = ['arac-codespace.herokuapp.com', '127.0.0.1:8000']
 ALLOWED_HOSTS = []
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'aracPortfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,3 +127,10 @@ USE_TZ = True
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, 'build/static'),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
