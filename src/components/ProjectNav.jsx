@@ -113,7 +113,7 @@ class ProjectNav extends React.Component {
 
 		return (
         <div className={"col-12 " + classes.projectNavWrapper}>
-          <div className={"row"}>
+          <div className={"row " + classes.projectNavWrapper}>
     				<div className={"col-12"}>
     					<h1 className={classes.viewHeader}>Projects</h1>
     				</div>

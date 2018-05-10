@@ -29,7 +29,7 @@ const styles = {
     paddingTop: "1rem"    
   },
   componentWrapper: {
-    backgroundColor: '#ffffff80',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
     // padding: "1rem 2rem",
     borderRadius: "5px 5px 0 0",
     height: "100%" 
