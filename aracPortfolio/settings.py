@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfolio',
-        'USER': os.environ["PG_Username"],
-        'PASSWORD': os.environ["PG_Password"],
+        'USER': os.environ.get('PG_Username'),
+        'PASSWORD': os.environ.get('PG_Password'),
         'HOST': 'localhost',
         'PORT': '',
     }
