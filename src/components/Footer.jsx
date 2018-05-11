@@ -53,7 +53,7 @@ class Footer extends React.Component {
             		<small className={classes.footerText}>© 2018 Alexis Aguirre</small>
             	</div>
             	<div className={classes.container}>
-            		<ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
+            		<ScrollButton/>
             	</div>  
 
             </div>	

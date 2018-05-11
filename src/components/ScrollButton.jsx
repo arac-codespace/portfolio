@@ -31,32 +31,11 @@ const styles = {
 const { classes } = jss.createStyleSheet(styles).attach();
 // https://codepen.io/Qbrid/pen/GjVvwL
 class ScrollButton extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-        intervalId: 0
-    };
-  }
-  
-  scrollStep() {
-    if (window.pageYOffset === 0) {
-        clearInterval(this.state.intervalId);
-    }
-    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
-  }
-  
-  scrollToTop() {
-    // setInterval(functionToPerform, everyXMilliseconds)
-    //https://www.w3schools.com/jsref/met_win_setinterval.asp
-    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-    this.setState({ intervalId: intervalId });
-  }
   
   render () {
       return (
         <button title='Back to top' className={classes.btnStyle} 
-          onClick={ () => { this.scrollToTop(); }}>
+          onClick={ () => { document.getElementsByClassName("logo-container")[0].scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); }}>
           <img alt="UpArrow" src={UpArrow} className={classes.iconStyle}></img>             
         </button>
       );

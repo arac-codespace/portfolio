@@ -58,39 +58,39 @@ does screw up the back to top button
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover; 
-  /*height: 100vh;*/
+  height: 100vh;
 }
 
 
 .react-wrapper {
-  /*height: 100%;*/
+  height: 100%;
 	background-color: transparent !important;
   overflow-y: scroll;
   -webkit-overflow-scrolling:touch;  
 }
 
 
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
   .content-enter {transform: translateX(100%);}
   .content-enter-active {transform: translateX(0%);}
   .content-exit {transform: translateX(0%);}
   .content-exit-active {transform: translateX(-100%);}    
-}
+}*/
 .content-enter {
   opacity: 0.01;
-  /*transform: translateX(100%);  */
+  transform: translateX(100%);  
 }
 .content-enter-active {
-  /*transform: translateX(0%);    */
+  transform: translateX(0%);    
   opacity: 1;
   transition: all 300ms ease-out;
 }
 .content-exit {
-  /*transform: translateX(0%);    */
+  transform: translateX(0%);    
   opacity: 1;
 }
 .content-exit-active {
-  /*transform: translateX(-100%);    */
+  transform: translateX(-100%);    
   opacity: 0.01;
   transition: all 300ms ease-out;
 }
