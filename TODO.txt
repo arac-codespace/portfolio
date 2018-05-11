@@ -2,3 +2,5 @@ Having issues with mobile safari/adblock browsers related to attachment-fixed/tr
 - Used media queries to allow transform animations for devices >= 800px.
 Back to top btn's icon position changed in mobile for some reason.
 - Added margin: 0 auto 5px to img.  Hopefully this will fix the issue?
+Had issues with favicons not showing when run by python server.  
+- Fixed by moving icons to favicon folder and adding its directory to staticfile_dir?
