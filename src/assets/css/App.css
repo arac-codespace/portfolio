@@ -5,7 +5,7 @@
 
 html, body, #root, .react-wrapper {
 	width: 100%;
-	height: 100%;
+	/*height: 100vh;*/
 }
 
 /*Size*/
@@ -42,19 +42,31 @@ small {
 	font-family: 'Work Sans', serif !important;
 }
 
-html {
+/*Note! overflow:hidden in html combined 
+with overflow-y:scroll/-webkit-overflow-scrolling:touch
+fixes the mobile background resizing issue.  However, this
+does screw up the back to top button
+*/
+
+#root {
   background-image: url("../imgs/alec-weir-26819-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  overflow: scroll;
+  overflow: hidden;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover; 
+  /*height: 100vh;*/
 }
-body {
+
+
+.react-wrapper {
+  /*height: 100%;*/
 	background-color: transparent !important;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch;  
 }
 
 

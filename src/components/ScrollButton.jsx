@@ -7,6 +7,7 @@ jss.setup(preset());
 
 const styles = {
   btnStyle: {
+    padding:"0",
     backgroundColor: "#d52a2a",
     border: "none",
     borderRadius: "4px",
