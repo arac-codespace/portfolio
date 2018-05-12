@@ -3,8 +3,10 @@
 A online portfolio created using Django and the React.js library.
 
 ---
+
 Version History
 V1.0 - Initial Release - 5/11/2018
+
 ---
 # TODO
 
