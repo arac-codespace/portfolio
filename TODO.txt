@@ -1,4 +1,12 @@
-(1)**Having issues with mobile safari/adblock browsers related to attachment-fixed/transform animations.  
+TODO
+
+(1) Hmm, adBlock iOS browser's scrolling function isn't smooth for some reason.  And what a surprise, IE also has the same issue.  Not a huge issue, but still...
+
+(2) Default android(samsung s4) internet browser only displays the background image?  Odd...
+
+
+ADRESSED TODOS
+(1) Having issues with mobile safari/adblock browsers related to attachment-fixed/transform animations.  
 - Used media queries to allow transform animations for devices >= 800px.
 -- Update --
 This issue seems more complicated than I first thought.  The bug persists even without transform animations.  I need to test if it has actually has something to do with transition animations or if it's a bug more closely related to react-router.
@@ -13,19 +21,23 @@ Since animations are not exactly part of the issue, I was able to remove the tra
 
 
 
-(2)**Back to top btn's icon position changed in mobile for some reason.
+(2) Back to top btn's icon position changed in mobile for some reason.
 - Added margin: 0 auto 5px to img.  Hopefully this will fix the issue?
 -- Update --
 Didn't work.  I'll probably have to connect an android device to debug things remotely...
 - Fixed! Changed img container padding to 0. 
 
 
-(3)**Had issues with favicons not showing when run by python server.  
+(3) Had issues with favicons not showing when run by python server.  
 - Fixed by moving icons to favicon folder and adding its directory to staticfile_dir.
 
 
 
-(4)**Android device has issues with bg height not spanning 100% of viewport.
+(4) Android device has issues with bg height not spanning 100% of viewport.
 - Fixed by setting html height to 100vh.
 - Funny enough, android devices don't seem to have an issue with transition animations or the 'back to top arrow being offset' issue.
 - Look at transform animation issues for more details.
+
+(5) Might want to add some padding-bottom/margin so mobile scrolling won't bounce over the footer which makes it inconvinient to see the footer's content...
+
+(6) Theme color for android browser doesn't match...
