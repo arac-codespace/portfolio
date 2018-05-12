@@ -62,7 +62,7 @@ class WebDev extends React.Component {
 							<li>SVG Crowbar</li>						
 							<li>Adobe Illustrator</li>
 						</ul>
-						<h4>Link: <a className={classes.linkStyle} href="https://strat-map.herokuapp.com/">strat-map.herokuapp.com</a></h4>
+						<h4>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://strat-map.herokuapp.com/">strat-map.herokuapp.com</a></h4>
 					</div>
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Portfolio</h3>
@@ -77,7 +77,7 @@ class WebDev extends React.Component {
 							<li>Bootstrap v4</li>
 							<li>JSS</li>
 						</ul>
-						<h4>Link: <a className={classes.linkStyle} href="https://arac-codespace.herokuapp.com/">arac-codespace.herokuapp.com</a></h4>					
+						<h4>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://arac-codespace.herokuapp.com/">arac-codespace.herokuapp.com</a></h4>					
 					</div>
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Marine Species Fossil Database</h3>
@@ -91,14 +91,14 @@ class WebDev extends React.Component {
 							<li>Bootstrap v3</li>
 							<li>Amazon S3</li>
 						</ul>
-						<h4>Link: <a className={classes.linkStyle} href="https://marine-species-fossil-database.herokuapp.com">marine-species-fossil-database.herokuapp.com</a></h4>										
+						<h4>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://marine-species-fossil-database.herokuapp.com">marine-species-fossil-database.herokuapp.com</a></h4>										
 					</div>	
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Github Repository</h3>
 						<p className={classes.paragraph}>
 							&emsp; Visit my Github repository to view the source code of these and other projects/experiments.  
 						</p>
-						<h4>Link: <a className={classes.linkStyle} href="https://github.com/arac-codespace">github.com/arac-codespace</a></h4>										
+						<h4>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://github.com/arac-codespace">github.com/arac-codespace</a></h4>										
 					</div>															
 				</div>
 				</div>	
