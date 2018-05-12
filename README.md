@@ -46,21 +46,22 @@ Since animations are not exactly part of the issue, I was able to remove the tra
 
 # For future reference:
 Base reference...
-https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
+- https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
 
 Include bootstrap...
-https://m.pardel.net/react-and-bootstrap-4-part-1-setup-navigation-d4767e2ed9f0
+- https://m.pardel.net/react-and-bootstrap-4-part-1-setup-navigation-d4767e2ed9f0
 
 Include react-router...
-https://reacttraining.com/react-router/web/guides/quick-start
-https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
+- https://reacttraining.com/react-router/web/guides/quick-start
+- https://github.com/mbrochh/django-graphql-apollo-react-demo#part2
 
 About the index.js file...
-https://stackoverflow.com/questions/41738421/how-react-js-index-js-file-contacting-index-html-for-id-references
+- https://stackoverflow.com/questions/41738421/how-react-js-index-js-file-contacting-index-html-for-id-references
 
 Django + React structure = deploying shennanigans
-https://medium.com/@nicholaskajoh/heres-a-dead-simple-react-django-setup-for-your-next-project-c0b0036663c6
-https://medium.com/@nicholaskajoh/deploy-your-react-django-app-on-heroku-335af9dab8a3
-https://github.com/nicholaskajoh/React-Django
-https://thinkster.io/tutorials/configuring-django-settings-for-production
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment
+
+- https://medium.com/@nicholaskajoh/heres-a-dead-simple-react-django-setup-for-your-next-project-c0b0036663c6
+- https://medium.com/@nicholaskajoh/deploy-your-react-django-app-on-heroku-335af9dab8a3
+- https://github.com/nicholaskajoh/React-Django
+- https://thinkster.io/tutorials/configuring-django-settings-for-production
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment
