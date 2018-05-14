@@ -32,7 +32,7 @@ const styles = {
   	}
   },
   paragraph: {
-  	textAlign: "justify"
+  	// textAlign: "justify"
   }
 };
 
@@ -47,7 +47,7 @@ class WebDev extends React.Component {
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>stratMap</h3>
 						<p className={classes.paragraph}>
-							&emsp; Automatically generate and plot a stratigraphic column based on the information the user provides.
+							Automatically generate and plot a stratigraphic column based on the information the user provides.
 						</p>
 						<ul>
 							<li>Generate stratigraphic columns and download them in SVG format.</li>
@@ -67,7 +67,7 @@ class WebDev extends React.Component {
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Portfolio</h3>
 						<p className={classes.paragraph}>
-							&emsp; A simple SPA portfolio for experimentation and exposure purposes.
+							A simple SPA portfolio for experimentation and exposure purposes.
 						</p>
 						<strong><p className={classes.toolset}>Toolset</p></strong>
 						<ul>
@@ -82,7 +82,7 @@ class WebDev extends React.Component {
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Marine Species Fossil Database</h3>
 						<p className={classes.paragraph}>
-							&emsp; Porting a simple "fossil book" project over to the net.  More of an encyclopedia entry than a database really.  
+							Porting a simple "fossil book" project over to the net.  More of an encyclopedia entry than a database really.  
 						</p>
 						<strong><p className={classes.toolset}>Toolset</p></strong>
 						<ul>
@@ -96,7 +96,7 @@ class WebDev extends React.Component {
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Github Repository</h3>
 						<p className={classes.paragraph}>
-							&emsp; Visit my Github repository to view the source code of these and other projects/experiments.  
+							Visit my Github repository to view the source code of these and other projects/experiments.  
 						</p>
 						<h5>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://github.com/arac-codespace">github.com/arac-codespace</a></h5>										
 					</div>															

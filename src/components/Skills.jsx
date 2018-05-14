@@ -31,7 +31,7 @@ class Skills extends React.Component {
 				<h1 className="text-center">Skills</h1>
 				<div className={classes.projectSection}>
 					<h3>Geology</h3>
-					<p className={classes.sectionDescription}> &emsp; General knowledge about the structure and evolution of the earth and its natural resources. 
+					<p className={classes.sectionDescription}> General knowledge about the structure and evolution of the earth and its natural resources. 
 							I'm particularly interested in the analysis and interpretation of depositional environments 
 							and sequence stratigraphy.
 					</p>
@@ -46,7 +46,7 @@ class Skills extends React.Component {
 				<div className={classes.projectSection}>
 					<h3>Web Development</h3>
 					<p className={classes.sectionDescription}>
-						&emsp; Currently developing applications with Django, 
+						Currently developing applications with Django, 
 						React and associated JS libraries.  I expect my next projects
 						to incorporate Redux (when necessary) for its data-management
 						capabilities. 
