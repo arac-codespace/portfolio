@@ -77,7 +77,7 @@ class WebDev extends React.Component {
 							<li>Bootstrap v4</li>
 							<li>JSS</li>
 						</ul>
-						<h5>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://arac-codespace.herokuapp.com/">arac-codespace.herokuapp.com</a></h5>					
+						<h5>Link: <a target="_blank" rel="noopener noreferrer" className={classes.linkStyle} href="https://alexis-aguirre.herokuapp.com/">alexis-aguirre.herokuapp.com</a></h5>					
 					</div>
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Marine Species Fossil Database</h3>
