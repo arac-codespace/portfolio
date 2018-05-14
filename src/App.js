@@ -32,7 +32,7 @@ const styles = {
     backgroundColor: 'rgba(255, 255, 255, 0.5)',
     // padding: "1rem 2rem",
     borderRadius: "5px 5px 0 0",
-    height: "100%" 
+    height: "100%", 
   },
   componentWrapperNoBg: {
     extend: "componentWrapper",
@@ -90,7 +90,7 @@ class App extends Component {
       <div className="react-wrapper container-fluid">
         <div className="row justify-content-center">
           <NavBar currentURL={currentURL} isMobile={isMobile}/>          
-          <div className={"col-12 col-lg-10 " + classes.content}>
+          <div className={"col-12 col-lg-9 " + classes.content}>
             <TransitionGroup>     
               <CSSTransition timeout={500} classNames="content" key={this.props.location.pathname}>  
                 <div>                  

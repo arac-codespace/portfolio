@@ -54,7 +54,7 @@ class Geology extends React.Component {
 							The north-northwest extension could also be identified at Site 3 where northeast trending faults
 							crosscut strata of the Juana Diaz Formation.
 						</p>
-						<h4>Link: <a rel="noopener noreferrer" target="_blank" className={classes.linkStyle} href={pdfStruct}>PDF Format</a></h4>										
+						<h5>Link: <a rel="noopener noreferrer" target="_blank" className={classes.linkStyle} href={pdfStruct}>PDF Format</a></h5>										
 					</div>
 					<div className={"col-12 " + classes.projectSection}>
 						<h3>Stratrigraphic analysis of an exposed section mountain cut at Extensión Alta Vista, Ponce</h3>
@@ -71,7 +71,7 @@ class Geology extends React.Component {
 							Lepidociclina, the abundance of Marginopora, and the lithologic characteristics of the area it is
 							concluded that the studied outcrop represents part of the Ponce Limestone.
 						</p>
-						<h4>Link: <a rel="noopener noreferrer" target="_blank" className={classes.linkStyle} href={pdfStrat}>PDF Format</a></h4>					
+						<h5>Link: <a rel="noopener noreferrer" target="_blank" className={classes.linkStyle} href={pdfStrat}>PDF Format</a></h5>					
 					</div>													
 				</div>	
 			</div>

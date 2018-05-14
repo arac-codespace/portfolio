@@ -14,6 +14,7 @@ h1 { font-size: 2.074em; }
 h2 { font-size: 1.728em; }
 h3 { font-size: 1.44em; }
 h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
 small { font-size: 0.833em; }
 @media screen and (min-width: 1400px) {
   html { font-size: 1.2em; }
@@ -35,11 +36,17 @@ h2 {
 h3,h4 {
 	font-family: 'Oswald', serif !important;
 }
+h5 {
+  font-family: 'Oswald', serif !important;  
+}
 p {
-    font-family: 'Work Sans', serif !important;
-    }
+    font-family: 'Work Sans', sans-serif !important;
+}
 small {
-	font-family: 'Work Sans', serif !important;
+	font-family: 'Work Sans', sans-serif !important;
+}
+ul {
+  font-family: 'Work Sans', sans-serif !important;
 }
 
 /*Note! overflow:hidden in html combined 
